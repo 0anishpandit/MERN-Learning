@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Innov Ecommerce (HTML , CSS , TailwindCSS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#ffcd90" ,
+            Secondary: "6eb1d6",
+          },
+          fontFamily :{
+            sans :["Intel", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header class="sticky shadow top-0 bg-white z-50">
+        <div class="container mx-auto pd-4">
+            <div class="flex justify-between items-center">
+                <a href="/index.html">
+                    <div class="flex item-center justify-start class="hover:text-green-500"">
+                    <img src="/assets/logo.png" alt="" height="60rem" width="60rem" > 
+            </div>
+                </a>
+            <nav class="hidden sm:flex gap-3">
+                <a href="#" class="hover:text-green-500">Home</a>
+                <a href="#" class="hover:text-green-500">Product</a>
+                <a href="#" class="hover:text-green-500">Categories</a>
+                <a href="#" class="hover:text-green-500">Workshops</a>
+                <a href="#" class="hover:text-green-500">About Us</a>
+                <a href="#" class="hover:text-green-500">Contact</a>
+                <a href="#" class="hover:text-green-500">Blog</a>
+            </nav>
+            <div class="flex gap-3">
+                <a href="#">
+                    <i class="fa-brands fa-searchengin hover:text-green-500"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user hover:text-green-500"></i>
+                </a>
+                <a href="#">
+                <i class="fa fa-shopping-cart hover:text-green-500"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+        
+    </header>
+    <main>
+        <!-- Display Banner  Section-->
+        <section class="py-4 md:py-16 bg-gradient-to-r from-primary to-secondary">
+            <div class="container mx-auto px-4 py-4 height-100%">
+                <div class="flex flex-col md:flex-row justify-center md:justify-between ">
+                     <!-- Left Content -->
+                   <div class="md:w-1/2">
+                    <h1 class="text-2xl font-bold  md:text-5xl lg:text-7xl">Welcome to InnovNepal</h1>
+                    <p class="text-justify max-w-[26rem]">We conduct interactive workshops in schools across Nepal, teaching students to build IoT solutions for real-world problems like smart agriculture and environment monitoring.</p>
+                    <div class="flex flex-col gap-2 mt-5 md:flex-row">
+                        <a href="#" class="bg-primary font-semibold px-4 py-3 rounded-lg text-center text-white hover:bg-green-500 transition hover:underline">View Workshop</a>
+                        <a href="#" class="font-semibold px-4 py-3 rounded-lg text-center  shadow bg-white hover:bg-green-500 transition hover:underline">Request Workshop</a>
+                    </div>
+                   </div>
+                   
+
+                    <!-- Right Image -->
+                     <div class="md:w-1/2 md:h-full mt-2 flex justify-center md:justify-end">
+                        <img src="/assets/image.png" class="max-w-full h-auto rounded-xl lg:w-3/4" alt="">
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories  Section-->
+        <section></section>
+
+        <!-- Recent Project  Section-->
+        <section></section>
+
+        <!-- Featured Products  Section-->
+        <section></section>
+
+        <!-- Student Testimonials  Section-->
+        <section></section>
+
+        <!-- Latest from our Blog  Section-->
+        <section></section>
+
+        <!-- Stay Updated Section-->
+        <section></section>
+    </main>
+    <footer></footer>
+</body>
+</html>
