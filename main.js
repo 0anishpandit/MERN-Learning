@@ -58,3 +58,35 @@ console.log(profile.ID_Number);
 // Array ( its like a Index value(position), index always start from 0)
 const marks = ["anish" , 12345, "Dharan,Nepal" , 98420257599];
 console.log(marks[2]); 
+
+// If-else / if-else if - esle case
+if (58>3){
+    console.log("True");
+}else{
+    console.log("False");
+}
+
+if (1>3){
+    console.log("True");
+}else if (6==6){
+    console.log("Equal");
+}else{
+    console.log("False");
+}
+
+// switch case
+const day = "monday";
+switch (day) {
+    case  "saturday":
+    console.log("Holiday");
+    break;
+
+    case "sunday":
+    console.log("Holiday");
+    break;
+
+    default:
+    console.log("Not Holiday");
+    break;
+
+}
