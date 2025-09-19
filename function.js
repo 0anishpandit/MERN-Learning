@@ -82,3 +82,18 @@ function test_variable(){
 
 test_variable();
 // console.log(local_variable); //this will through local_variable not defined error
+
+
+// Function for the cubic number 
+function cubic (number3){
+    const cube = (number3 * number3 * number3);
+return cube;
+}
+
+const results3 = cubic(3);
+console.log("The cube of the given number is " +results3);
+
+for (let i=1;i<=10;i++){
+    const results3 = cubic(i);
+    console.log("The cube of " + i +" is " + results3);
+}
