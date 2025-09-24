@@ -10,6 +10,8 @@
 
 */
 
+/*
+
 // Function without parameters i.e no arguments
 function test_noparam (){
     // code
@@ -96,4 +98,23 @@ console.log("The cube of the given number is " +results3);
 for (let i=1;i<=10;i++){
     const results3 = cubic(i);
     console.log("The cube of " + i +" is " + results3);
+}
+
+*/
+
+// Q1. Create a function that generates cubic values ?
+
+function cubic (number){
+    const cube = (number * number * number);
+return cube; 
+}
+
+const result = cubic(3);
+console.log("The cube of the given number is " + result);
+
+
+// Q2. Use the Function in loop to generate cubic value from 1 to 20.
+for (let i=1;i<=20;i++){
+    const result_loop = cubic(i);
+    console.log("The cube of "+ i + " is " + result_loop);
 }
