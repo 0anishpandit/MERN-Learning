@@ -102,6 +102,8 @@ for (let i=1;i<=10;i++){
 
 */
 
+
+
 // Q1. Create a function that generates cubic values ?
 
 function cubic (number){
@@ -118,3 +120,4 @@ for (let i=1;i<=20;i++){
     const result_loop = cubic(i);
     console.log("The cube of "+ i + " is " + result_loop);
 }
+
