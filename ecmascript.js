@@ -107,15 +107,23 @@ const a = 5;
 const b = 5;
 
 function sum () {
-    console.log(a + b);
+    console.log("I am normal Function " + a + b);
 };
 
 sum();
 
 
 // Arrow Function
-const total = () => console.log(a +b );
-
+const total = () => console.log("I am from Arrow Function " + a +b );
 total();
 
+
+// Array Methods: It provides the built-in methods for working with the arrays , enabling efficient manipulation , iteration, and transformation of data.
+/* 
+Some Methods like:
+    1. Adding/Removing Elements
+    2. Searching and Testing Elements
+    3. Iteration and Transformation 
+    4. Utility Methods
+*/
 
