@@ -48,3 +48,36 @@ const[firstColor, secondColor,thirdColor] = colors;
 console.log(firstColor);
 console.log(secondColor);
 console.log(thirdColor);
+
+
+// Spread Operator(Generally we use the spread operator for copying the data)
+const profile={
+    name: "Ram",
+    age:26,
+    address: "Itahari"
+};
+
+const user = {
+    email : "dhiraj.rai@gmail.com",
+    password: 1234567890
+};
+
+// When we need to combine both the list , there are multiple ways , like 
+const userData= {
+    name : profile.name,
+    age : profile.age,
+    address : profile.address,
+    email : user.email,
+    password : user,
+};
+console.log(userData);
+
+// Using spread operator to make it ease
+const userdatas = {
+    ...profile,
+    ...user,
+};
+console.log(userdatas);
+
+// Same this spread operators can be used for array also
+const array_demo = ["Ram" , "Shyam", "Dhiraj", "Red" , 1];
