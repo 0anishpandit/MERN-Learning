@@ -80,4 +80,42 @@ const userdatas = {
 console.log(userdatas);
 
 // Same this spread operators can be used for array also
-const array_demo = ["Ram" , "Shyam", "Dhiraj", "Red" , 1];
+const array_demo = ["Ram" , "Shyam", "Dhiraj", "Sita" , 1];
+const array_demo1 = ["Red" , "Green" , "Blue" ,"Yellow"];
+
+const userDatass = [...array_demo,...array_demo1];
+console.log(userDatass);
+
+
+
+// Arrow Function 
+/*
+    Arrow functions, introduced in ECMAScript 2015 (ES6), provide a concise syntax for writing function expressions in JavaScript. They offer a shorter way to define functions and have distinct characteristics compared to traditional function expressions, particularly regarding the this keyword.
+
+    Key Features and Syntax:
+
+    Concise Syntax:
+        -They omit the function keyword.
+        -The => (arrow) separates the parameter list from the function   body.
+        -For single-expression bodies, curly braces {} and the return -keyword can be omitted for an implicit return.
+        -For single parameters, the parentheses () around the parameter can be omitted.
+*/
+
+
+// General type of function
+const a = 5;
+const b = 5;
+
+function sum () {
+    console.log(a + b);
+};
+
+sum();
+
+
+// Arrow Function
+const total = () => console.log(a +b );
+
+total();
+
+
