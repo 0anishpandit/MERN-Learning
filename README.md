@@ -15,6 +15,10 @@
     -Build using C++
     -Uses Google Chrome V8 engine for compiling
     -Used to build APIs , Microservices , Serverside Programs , Command Line Interface (CLI), Webhooks
+
+
+    Frontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Backend
+                        API
     
     #Architecture
         -Single threaded event driven architecture
