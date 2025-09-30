@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is the begining for the learning or mern development",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "start",
     "start": "node server.js"
