@@ -47,11 +47,30 @@
             -it is a programming modeml that allows a program to initiate a task that takes a long time to complete and continue running other tasks while waiting for the result.
 
             EXAMPLE:-- READ , WRITE , UPDATE , DELETE
-            
+
 */
 
+import fs from "fs";
+
+// Synchronous READ
+const readData = fs.readFileSync("data.txt" , "utf8");
+console.log(readData); 
 
 
 
 
+// Synchronous WRITE
+// If the file exist then its overwritten, else new file is created, and again if the new file is changed then its overwritten again.
+fs.writeFileSync("myFile.txt" , "I am newly build file with overwritten data.");
 
+
+
+// Synchronous UPDATE
+fs.appendFileSync("myfile.txt" , "\nI have Been appended on myFile.txt");
+
+// Synchronous DELETE
+    // Remove(-rmSync : -rmdirSync :removes files and folders)
+    // unlink(removes  only the file)
+
+
+fs.unlinkSync("myfile.txt");
