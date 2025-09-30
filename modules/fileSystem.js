@@ -51,6 +51,9 @@
 */
 
 import fs from "fs";
+/*
+
+
 
 // Synchronous READ
 const readData = fs.readFileSync("data.txt" , "utf8");
@@ -74,3 +77,57 @@ fs.appendFileSync("myfile.txt" , "\nI have Been appended on myFile.txt");
 
 
 fs.unlinkSync("myfile.txt");
+
+*/
+
+// // Asynchronous READ
+// fs.readFile("data.txt" , "utf8" , (error , data)=>{
+//     if (error){
+//         console.log(error);
+//     }
+//     console.log(data);
+// });
+
+
+// Difference in between Synchronous & Asynchronous 
+    // Synchronous
+        const result = fs.readFileSync("data.txt" , "utf8" );
+        console.log(result);
+        console.log("Hello in Sequence.");
+
+    // Asynchronous
+        fs.readFile("data.txt" , "utf8" , (error,datas) => {
+            if(error){
+                console.log(error);
+            }
+            console.log(datas);
+        });
+        console.log("Hello in sequence");
+
+// Asynchronous WRITE
+fs.writeFile("same.txt" , "Writing from asynchronous file." , (error,asyFile)=> {
+    if(error){
+        console.log(error);
+    }
+    console.log("File have been created successfully");
+
+});
+
+// Asynchronous Update
+fs.appendFile("same.txt" , "Writing from asynchronous file." , (error,asyFile)=> {
+    if(error){
+        console.log(error);
+    }
+    console.log("File have been created successfully");
+
+});
+
+
+// Asynchronous DELETE
+fs.rm("same.txt" , (error,asyFile)=> {
+    if(error){
+        console.log(error);
+    }
+    console.log("File deleted Successfully.");
+
+});
