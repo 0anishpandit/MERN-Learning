@@ -29,6 +29,8 @@ apps.listen(5000 , () => {
 
 */
 
+/*
+
 import http from "http";
 
 const app = http.createServer((request,response) => {
@@ -43,4 +45,29 @@ const app = http.createServer((request,response) => {
 
 app.listen(5000 , () => {
     console.log("Server Started Successfully... ");
+});
+
+*/
+
+
+// getting request from client/frontend
+
+import http, { request } from "http";
+const app = http.createServer((request,response) => {
+    console.log(request.url);
+
+    if(request.url === "/"){
+        response.writeHead(200 , {"content-type" : "text/html"});
+        response.end("<h1>Homepage</h1>");
+    }else if (request.url === "/about"){
+        response.writeHead(200 , {"content-type" : "text/html"});
+        response.end("<h1>About Page</h1>");
+    }else{
+        response.writeHead(404, {"content-type" : "text/html"});
+        response.end("<h1>Page Not Found...</h1>");
+    };
+});
+
+app.listen(5000, () => {
+    console.log("Server Started at 5000 port...")
 });
